@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLk-lU-mkn" customClass="YCIrregularButton">
+                                <rect key="frame" x="50" y="94" width="98" height="89"/>
+                                <state key="normal" image="btn_type_1"/>
+                                <connections>
+                                    <action selector="irregularBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bB-1Y-d6n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjZ-II-reu" customClass="YCIrregularButton">
+                                <rect key="frame" x="264" y="94" width="100" height="100"/>
+                                <state key="normal" image="btn_type_2"/>
+                                <connections>
+                                    <action selector="irregularBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clI-aB-peu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pp-iA-Y8d" customClass="YCIrregularButton">
+                                <rect key="frame" x="50" y="283" width="100" height="100"/>
+                                <state key="normal" image="btn_type_3"/>
+                                <connections>
+                                    <action selector="irregularBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="io3-xr-8oa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-vB-HtJ" customClass="YCIrregularButton">
+                                <rect key="frame" x="262.5" y="294" width="101.5" height="75.5"/>
+                                <state key="normal" image="btn_type_4"/>
+                                <connections>
+                                    <action selector="irregularBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SDp-2t-Q4m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tjZ-II-reu" secondAttribute="trailing" constant="50" id="2W6-fr-Yig"/>
+                            <constraint firstItem="5Pp-iA-Y8d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="9g7-VJ-Adg"/>
+                            <constraint firstItem="tjZ-II-reu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Csq-FN-0DB"/>
+                            <constraint firstItem="mLk-lU-mkn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="D6Q-dZ-5gb"/>
+                            <constraint firstItem="oUG-vB-HtJ" firstAttribute="top" secondItem="tjZ-II-reu" secondAttribute="bottom" constant="100" id="Ypr-9F-SRx"/>
+                            <constraint firstItem="5Pp-iA-Y8d" firstAttribute="top" secondItem="mLk-lU-mkn" secondAttribute="bottom" constant="100" id="aSM-c9-J4S"/>
+                            <constraint firstItem="mLk-lU-mkn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="asG-cN-Scq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oUG-vB-HtJ" secondAttribute="trailing" constant="50" id="hZV-0W-FLO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_type_1" width="98" height="89"/>
+        <image name="btn_type_2" width="100" height="100"/>
+        <image name="btn_type_3" width="100" height="100"/>
+        <image name="btn_type_4" width="101.5" height="75.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
